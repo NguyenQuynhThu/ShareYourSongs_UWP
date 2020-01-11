@@ -9,6 +9,54 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="UPLOAD SONG" Margin="0,52,0,24" HorizontalAlignment="Center" Style="{StaticResource BaseTextBlockStyle}" FontSize="25"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+               
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin ="24,24,0,0"  >Song</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin ="24,24,0,0"  >Singer</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" Margin ="24,24,0,0"  >Author</TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" Margin ="24,24,0,0"  >Thumbnail</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="0" Margin ="24,24,0,0"  >Link</TextBlock>
+           
+            <TextBox x:Name="TxtName" Grid.Row="0" Grid.Column="1" Margin ="24,12,0,0" Width="360px"  AutomationProperties.Name="Simple TextBox"/>
+            <TextBox x:Name="TxtSinger" Grid.Row="1" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <TextBox x:Name="TxtAuthor" Grid.Row="2" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <TextBox x:Name="TxtThumbnail" Grid.Row="3" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <TextBox x:Name="TxtLink" Grid.Row="4" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+
+
+            <TextBlock x:Name="Name_Error" Grid.Row="0" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Singer_Error" Grid.Row="1" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Author_Error" Grid.Row="2" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Thumbnail_Error" Grid.Row="3" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Link_Error" Grid.Row="4" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+
+            <Button Click="SubmitData" Grid.Row="5" Grid.Column="1" Margin="24" HorizontalAlignment="Center">Submit</Button>
+
+
+
+        </Grid>
 
     </Grid>
 </Page>

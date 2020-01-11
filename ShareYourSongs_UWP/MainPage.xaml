@@ -33,14 +33,19 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="14,24,0,24" >
                         <SymbolIcon Symbol="MusicInfo" />
-                        <Button x:Uid="ListSongs" Background="Transparent" Padding="25,0,0,0" Click="ListSongs_Click">List Songs</Button>
+                        <Button x:Uid="ListSongs" Background="Transparent" Padding="25,0,0,0" Click="ListSongs_Click">Latest Songs</Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="14,24,0,24" >
+                        <SymbolIcon Symbol="MusicInfo" />
+                        <Button x:Uid="ListSongs" Background="Transparent" Padding="25,0,0,0" Click="My_ListSongs_Click">My Songs</Button>
                     </StackPanel>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="14,24,0,24" >
                     <SymbolIcon Symbol="Setting" />
-                    <TextBlock Text="Setting" Margin="24,0,0,0" VerticalAlignment="Center"/>
+                    <Button x:Uid="Settings" Background="Transparent" Padding="25,0,0,0" Click="Settings_Click">Settings</Button>
                 </StackPanel>
+                
             </Grid>
         </SplitView.Pane>
         

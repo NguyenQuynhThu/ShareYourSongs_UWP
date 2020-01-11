@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>6B46EBE384EE6A066FBD05AA6B7FE4F349148E57CB161858C0CB96D0C10532A7</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>990D25D49E996936109026DE1E842107C9FDF5BA73277403B9EBAA69E609786A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>7f4574c9-ae1e-4502-a8a0-95bd3a938533_1.0.0.0_x86__bnst2yan2rjm2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7f4574c9-ae1e-4502-a8a0-95bd3a938533_bnst2yan2rjm2!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7f4574c9-ae1e-4502-a8a0-95bd3a938533</RegisteredPackageID>
@@ -30,25 +30,69 @@
     <AppXManifest Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-12-19T16:45:16.896</Modified>
+      <Modified>2020-01-11T09:08:50.266</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\ShareYourSongs_UWP.exe">
       <PackagePath>entrypoint\ShareYourSongs_UWP.exe</PackagePath>
-      <Modified>2019-12-19T16:45:15.075</Modified>
+      <Modified>2020-01-11T09:08:48.078</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2019-04-21T18:06:16.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\nito.asyncex.context\5.0.0\lib\netstandard2.0\Nito.AsyncEx.Context.dll">
+      <PackagePath>Nito.AsyncEx.Context.dll</PackagePath>
+      <Modified>2019-04-01T19:21:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\nito.asyncex.coordination\5.0.0\lib\netstandard2.0\Nito.AsyncEx.Coordination.dll">
+      <PackagePath>Nito.AsyncEx.Coordination.dll</PackagePath>
+      <Modified>2019-04-01T19:21:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\nito.asyncex.interop.waithandles\5.0.0\lib\netstandard2.0\Nito.AsyncEx.Interop.WaitHandles.dll">
+      <PackagePath>Nito.AsyncEx.Interop.WaitHandles.dll</PackagePath>
+      <Modified>2019-04-01T19:21:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\nito.asyncex.oop\5.0.0\lib\netstandard2.0\Nito.AsyncEx.Oop.dll">
+      <PackagePath>Nito.AsyncEx.Oop.dll</PackagePath>
+      <Modified>2019-04-01T19:21:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\nito.asyncex.tasks\5.0.0\lib\netstandard2.0\Nito.AsyncEx.Tasks.dll">
+      <PackagePath>Nito.AsyncEx.Tasks.dll</PackagePath>
+      <Modified>2019-04-01T19:21:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\nito.cancellation\1.0.5\lib\netstandard2.0\Nito.Cancellation.dll">
+      <PackagePath>Nito.Cancellation.dll</PackagePath>
+      <Modified>2017-09-09T00:57:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\nito.collections.deque\1.0.4\lib\netstandard2.0\Nito.Collections.Deque.dll">
+      <PackagePath>Nito.Collections.Deque.dll</PackagePath>
+      <Modified>2017-09-09T00:54:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\nito.disposables\2.0.0\lib\netstandard2.0\Nito.Disposables.dll">
+      <PackagePath>Nito.Disposables.dll</PackagePath>
+      <Modified>2018-06-01T18:15:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T07:01:14.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\sqlitepcl\3.8.7.2\lib\netcore451\SQLitePCL.dll">
+      <PackagePath>SQLitePCL.dll</PackagePath>
+      <Modified>2014-12-09T04:04:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T11:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.30.1\Redist\Debug\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2020-01-09T12:29:32.676</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
+      <PackagePath>SQLitePCL.Ext.dll</PackagePath>
+      <Modified>2014-12-09T04:04:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -90,31 +134,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\ShareYourSongs_UWP.xr.xml">
       <PackagePath>ShareYourSongs_UWP.xr.xml</PackagePath>
-      <Modified>2019-12-19T16:45:14.743</Modified>
+      <Modified>2020-01-11T08:01:16.629</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-12-19T16:45:14.774</Modified>
+      <Modified>2020-01-11T09:08:47.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-12-19T16:45:14.774</Modified>
+      <Modified>2020-01-11T09:08:47.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Pages\AddSong.xbf">
       <PackagePath>Pages\AddSong.xbf</PackagePath>
-      <Modified>2019-12-19T16:45:14.774</Modified>
+      <Modified>2020-01-11T09:08:47.569</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Pages\ListSongs.xbf">
+      <PackagePath>Pages\ListSongs.xbf</PackagePath>
+      <Modified>2020-01-11T09:08:47.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Pages\Login.xbf">
       <PackagePath>Pages\Login.xbf</PackagePath>
-      <Modified>2019-12-19T16:45:14.775</Modified>
+      <Modified>2020-01-11T09:08:47.570</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Pages\MemberInfomation.xbf">
+      <PackagePath>Pages\MemberInfomation.xbf</PackagePath>
+      <Modified>2020-01-11T09:08:47.570</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Pages\MySongs.xbf">
+      <PackagePath>Pages\MySongs.xbf</PackagePath>
+      <Modified>2020-01-11T09:08:47.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Pages\Register.xbf">
       <PackagePath>Pages\Register.xbf</PackagePath>
-      <Modified>2019-12-19T16:45:14.775</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Pages\SongList.xbf">
-      <PackagePath>Pages\SongList.xbf</PackagePath>
-      <Modified>2019-12-19T16:45:14.776</Modified>
+      <Modified>2020-01-11T09:08:47.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -122,11 +174,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-12-19T12:40:41.190</Modified>
+      <Modified>2020-01-11T09:04:34.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ikutaoki\source\repos\ShareYourSongs_UWP\ShareYourSongs_UWP\bin\x86\Debug\Core\ShareYourSongs_UWP.exe">
       <PackagePath>ShareYourSongs_UWP.exe</PackagePath>
-      <Modified>2019-12-19T16:45:16.882</Modified>
+      <Modified>2020-01-11T09:08:50.252</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

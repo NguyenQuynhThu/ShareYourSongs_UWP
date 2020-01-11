@@ -17,9 +17,17 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="LOGIN" Margin="0,52,0,24" HorizontalAlignment="Center" Style="{StaticResource BaseTextBlockStyle}"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="REGISTER" Margin="0,52,0,24" HorizontalAlignment="Center" Style="{StaticResource BaseTextBlockStyle}" FontSize="25"/>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
@@ -28,11 +36,41 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Margin ="24,24,0,0"  >Email</TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="0" Margin="24,24,0,0"  >Password</TextBlock>
-            <PasswordBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin ="24,12,0,0" Width="300" AutomationProperties.Name="Simple PasswordBox"/>
-            <TextBox Grid.Row="1" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
-            <TextBlock Grid.Row="0" Grid.Column="2">noti</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin ="24,24,0,0"  >First Name</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin ="24,24,0,0"  >Last Name</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" Margin ="24,24,0,0"  >Password</TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" Margin ="24,24,0,0"  >Address</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="0" Margin ="24,24,0,0"  >Phone</TextBlock>
+            <TextBlock Grid.Row="5" Grid.Column="0" Margin ="24,24,0,0"  >Avatar</TextBlock>
+            <TextBlock Grid.Row="6" Grid.Column="0" Margin ="24,24,0,0"  >Gender</TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="0" Margin="24,24,0,0"  >Email</TextBlock>
+            <TextBlock Grid.Row="8" Grid.Column="0" Margin="24,24,0,0"  >Birthday</TextBlock>
+
+            <TextBox x:Name="TxtFirstName" Grid.Row="0" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <TextBox x:Name="TxtLastName" Grid.Row="1" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <PasswordBox x:Name="PwdPassword" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Margin ="24,12,0,0" Width="360" AutomationProperties.Name="Simple PasswordBox"/>
+            <TextBox x:Name="TxtAddress" Grid.Row="3" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <TextBox x:Name="TxtPhone" Grid.Row="4" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <TextBox x:Name="TxtAvatar" Grid.Row="5" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="1" Margin ="24,12,0,0">
+                <RadioButton Content="Male" Tag="Male" IsChecked="True" Checked="RadioButton_Checked" />
+                <RadioButton Content="Female" Tag="Female" Checked="RadioButton_Checked"/>
+                <RadioButton Content="Other" Tag="Other" Checked="RadioButton_Checked"/>
+            </StackPanel>
+            <TextBox x:Name="TxtEmail" Grid.Row="7" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+            <DatePicker x:Name="DatePickerBirthday" Grid.Row="8" Grid.Column="1" Margin ="24,12,0,0" SelectedDate="{Binding StartDate}" ></DatePicker>
+
+            <TextBlock x:Name="FirstName_Error"  Grid.Row="0" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="LastName_Error" Grid.Row="1" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Password_Error" Grid.Row="2" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Address_Error" Grid.Row="3" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Phone_Error" Grid.Row="4" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red"  ></TextBlock>
+            <TextBlock x:Name="Avatar_Error" Grid.Row="5" Grid.Column="2" Margin ="24,24,0,0"  Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Email_Error" Grid.Row="7" Grid.Column="2" Margin="24,24,0,0" Foreground="Red" ></TextBlock>
+            <TextBlock x:Name="Birthday_Error" Grid.Row="8" Grid.Column="2" Margin="24,24,0,0" Foreground="Red" ></TextBlock>
+            
+            <Button Click="SubmitData" Grid.Row="9" Grid.Column="1" Margin="24" HorizontalAlignment="Center">Submit</Button>
+          
         </Grid>
 
     </Grid>

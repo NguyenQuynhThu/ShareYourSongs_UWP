@@ -21,30 +21,35 @@
                 <StackPanel Orientation="Vertical" Grid.Row="1">
                     <StackPanel Orientation="Horizontal" Margin="14,24,0,24" >
                         <SymbolIcon Symbol="World" />
-                        <Button x:ConnectionId='6' x:Uid="Login" Background="Transparent" Padding="25,0,0,0"                    >Login</Button>
+                        <Button x:ConnectionId='8' x:Uid="Login" Background="Transparent" Padding="25,0,0,0"                    >Login</Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="14,24,0,24" >
                         <SymbolIcon Symbol="Contact" />
-                        <Button x:ConnectionId='5' x:Uid="Register" Background="Transparent" Padding="25,0,0,0"                       >Register</Button>
+                        <Button x:ConnectionId='7' x:Uid="Register" Background="Transparent" Padding="25,0,0,0"                       >Register</Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="14,24,0,24" >
                         <SymbolIcon Symbol="Upload" />
-                        <Button x:ConnectionId='4' x:Uid="Upload" Background="Transparent" Padding="25,0,0,0"                     >Upload</Button>
+                        <Button x:ConnectionId='6' x:Uid="Upload" Background="Transparent" Padding="25,0,0,0"                     >Upload</Button>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="14,24,0,24" >
                         <SymbolIcon Symbol="MusicInfo" />
-                        <Button x:ConnectionId='3' x:Uid="ListSongs" Background="Transparent" Padding="25,0,0,0"                        >List Songs</Button>
+                        <Button x:ConnectionId='5' x:Uid="ListSongs" Background="Transparent" Padding="25,0,0,0"                        >Latest Songs</Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="14,24,0,24" >
+                        <SymbolIcon Symbol="MusicInfo" />
+                        <Button x:ConnectionId='4' x:Uid="ListSongs" Background="Transparent" Padding="25,0,0,0"                           >My Songs</Button>
                     </StackPanel>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="14,24,0,24" >
                     <SymbolIcon Symbol="Setting" />
-                    <TextBlock Text="Setting" Margin="24,0,0,0" VerticalAlignment="Center"/>
+                    <Button x:ConnectionId='3' x:Uid="Settings" Background="Transparent" Padding="25,0,0,0"                       >Settings</Button>
                 </StackPanel>
+                
             </Grid>
         </SplitView.Pane>
         
-            <Frame x:ConnectionId='7' x:Name="contentFrame"></Frame>
+        <Frame x:ConnectionId='9' x:Name="contentFrame"></Frame>
       
     </SplitView>
 

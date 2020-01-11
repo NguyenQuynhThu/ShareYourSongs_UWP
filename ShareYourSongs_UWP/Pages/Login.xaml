@@ -19,9 +19,10 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="LOGIN" Margin="0,52,0,24" HorizontalAlignment="Center" Style="{StaticResource BaseTextBlockStyle}"/>
-            <Grid Grid.Row="1">
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="LOGIN" Margin="0,52,0,24" HorizontalAlignment="Center" Style="{StaticResource BaseTextBlockStyle}" FontSize="25px"/>
+        <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
@@ -32,10 +33,16 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Row="0" Grid.Column="0" Margin ="24,24,0,0"  >Email</TextBlock>
                 <TextBlock Grid.Row="1" Grid.Column="0" Margin="24,24,0,0"  >Password</TextBlock>
-                <PasswordBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin ="24,12,0,0" Width="300" AutomationProperties.Name="Simple PasswordBox"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
-                <TextBlock Grid.Row="0" Grid.Column="2"></TextBlock>
-            </Grid>
+                
+                <TextBox x:Name="TxtEmail" Grid.Row="0" Grid.Column="1" Margin ="24,12,0,0" AutomationProperties.Name="Simple TextBox"/>
+                <PasswordBox x:Name="PwdPassword" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Margin ="24,12,0,0" Width="300" AutomationProperties.Name="Simple PasswordBox"/>
+
+                <TextBlock x:Name="Email_Error"  Grid.Row="0" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+                <TextBlock x:Name="Password_Error" Grid.Row="1" Grid.Column="2" Margin ="24,24,0,0" Foreground="Red" ></TextBlock>
+                
+            <Button Click="SubmitData" Grid.Row="2" Grid.Column="1" Margin="24" HorizontalAlignment="Center">Submit</Button>
+
+        </Grid>
             
         </Grid>
 
